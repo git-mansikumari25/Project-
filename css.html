@@ -1,0 +1,81 @@
+/* *{
+   background-color: pink; 
+} */
+@media screen and (min-width:150px) and (max-width:800px){
+.pagelayout{
+    background-color: rgb(255, 255, 255);
+    background-image: url(weblogo.png);
+    background-size: 30px;
+    width: 100%;
+    background-blend-mode: hard-light;
+    align-content: center;
+    align-items: center;
+    transition: width 5 s ease;
+}
+}
+@media screen and (min-width:800px){
+.pagelayout{
+    background-color: rgb(255, 255, 255);
+    background-image: url(weblogo.png);
+    background-size: 30px;
+    background-blend-mode: hard-light;
+    width: 70%;
+    margin-left: 15%;
+    align-items: center;
+    transition: width 5 s ease;
+}
+}
+nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content:space-around;  
+}
+.logo{
+    font-weight: 700px;
+    width: 35px;
+    border-radius: 50%;    
+}
+ul {
+    display: flex;
+    list-style-type: none;
+    gap: 15px;
+}
+li ,a{
+    color: rgb(2, 0, 0);
+}
+a{
+    text-decoration: none;
+}
+button{
+    background-color: aqua;
+}
+
+.imgsection1{
+    display: flex;
+    /* max-width: 100%; */
+    height: 100%;
+    object-fit: contain;
+}
+.imgsection1 img{
+    width: 14.5%;
+    height: 160px ;
+}
+.producttype {
+    display: flex;
+    /* width: 100%; */
+    /* gap: 2px; */
+    height: 145px;
+    text-align: center;
+}
+.producttype img{
+    width: 100%;
+    height: 100px;
+    border-radius: 4px;
+}
+.categories{
+    width: 20%;
+}
+html {
+    scroll-behavior: smooth;
+}
