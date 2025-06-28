@@ -1,0 +1,73 @@
+<!DOCTYPE>
+ <html>
+<html lang="en">
+
+ <title>JavaScript task </title>
+  
+  </head>
+<body>
+
+  <h1> JavaScript Program </h1>
+
+  
+  <div class="section">
+    <h2>1. Print Name and Address</h2>
+    <p id="nameAddressOutput"></p>
+  </div>
+
+ 
+  <div class="section">
+    <h2>2. Check Value and Data-Type</h2>
+    <p id="typeCheckOutput"></p>
+  </div>
+
+  
+  <div class="section">
+    <h2>3. Concatenate Strings in Uppercase</h2>
+    <p id="stringConcatOutput"></p>
+  </div>
+
+  
+  <div class="section">
+    <h2>4. String Length in Bytes</h2>
+    <p id="stringBytesOutput"></p>
+  </div>
+
+  
+  <div class="section">
+    <h2>5. Round a Number</h2>
+    <p id="roundedOutput"></p>
+  </div>
+
+  <script>
+   // 1.
+    let name = "mansi kumari";
+    let address = "munger, patna, bihar";
+    document.getElementById("nameAddressOutput").innerHTML = `Name: ${name}<br>Address: ${address}`;
+
+    // 2. 
+	let a = "98";
+    let b = "95";
+    let typeCheckResult = (a === b) ? "Both value and data-type are same." : "Value or data-type are different.";
+    document.getElementById("typeCheckOutput").textContent = typeCheckResult;
+
+    // 3.
+    let str1 = "my name";
+    let str2 = "is mansi";
+    let combinedString = (str1 + str2).toUpperCase();
+    document.getElementById("stringConcatOutput").textContent = combinedString;
+
+    // 4. 
+    let sampleText = "my patna";
+    let byteLength = new Blob([sampleText]).size;
+    document.getElementById("stringBytesOutput").innerHTML = `String: ${sampleText}<br>Length in Bytes: ${byteLength}`;
+
+    // 5.
+    let number = 8.8765432;
+    let digits = 3;
+    let roundedNumber = number.toFixed(digits);
+    document.getElementById("roundedOutput").innerHTML = `Original Number: ${number}<br>Rounded to ${digits} digits: ${roundedNumber}`;
+  </script>
+
+</body>
+</html>
